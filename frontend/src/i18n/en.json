@@ -1,0 +1,101 @@
+{
+    "common": {
+      "appName": "GitLab Insight AI",
+      "loading": "Loading...",
+      "error": "An error occurred",
+      "success": "Success",
+      "cancel": "Cancel",
+      "save": "Save",
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirm": "Confirm",
+      "back": "Back"
+    },
+    "auth": {
+      "login": "Log In",
+      "logout": "Log Out",
+      "register": "Register",
+      "forgotPassword": "Forgot Password",
+      "resetPassword": "Reset Password",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "newPassword": "New Password",
+      "rememberMe": "Remember Me",
+      "loginSuccess": "Logged in successfully",
+      "logoutSuccess": "Logged out successfully",
+      "registrationSuccess": "Registration successful",
+      "passwordResetSuccess": "Password reset successfully"
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "projects": "Projects",
+      "models": "ML Models",
+      "datasets": "Datasets",
+      "analytics": "Analytics",
+      "settings": "Settings",
+      "profile": "Profile"
+    },
+    "dashboard": {
+      "welcome": "Welcome, {{name}}",
+      "recentActivity": "Recent Activity",
+      "quickStats": "Quick Stats",
+      "totalProjects": "Total Projects",
+      "activeModels": "Active Models",
+      "pendingTasks": "Pending Tasks"
+    },
+    "projects": {
+      "createProject": "Create Project",
+      "projectName": "Project Name",
+      "description": "Description",
+      "createdAt": "Created At",
+      "lastUpdated": "Last Updated",
+      "noProjects": "No projects found"
+    },
+    "models": {
+      "createModel": "Create Model",
+      "modelName": "Model Name",
+      "modelType": "Model Type",
+      "status": "Status",
+      "accuracy": "Accuracy",
+      "trainModel": "Train Model",
+      "deployModel": "Deploy Model",
+      "predictionsCount": "Predictions Count"
+    },
+    "datasets": {
+      "uploadDataset": "Upload Dataset",
+      "datasetName": "Dataset Name",
+      "rowCount": "Row Count",
+      "columnCount": "Column Count",
+      "lastUsed": "Last Used",
+      "noDatasets": "No datasets found"
+    },
+    "analytics": {
+      "performanceOverview": "Performance Overview",
+      "modelComparison": "Model Comparison",
+      "userActivity": "User Activity",
+      "dataDistribution": "Data Distribution",
+      "timeRange": "Time Range",
+      "metric": "Metric"
+    },
+    "settings": {
+      "accountSettings": "Account Settings",
+      "notificationPreferences": "Notification Preferences",
+      "securitySettings": "Security Settings",
+      "apiKeys": "API Keys",
+      "darkMode": "Dark Mode",
+      "language": "Language"
+    },
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Invalid email address",
+      "passwordMismatch": "Passwords do not match",
+      "minLength": "Must be at least {{count}} characters",
+      "maxLength": "Must be no more than {{count}} characters",
+      "serverError": "Server error occurred. Please try again later.",
+      "notFound": "Resource not found",
+      "unauthorized": "Unauthorized access",
+      "forbidden": "Access forbidden"
+    }
+  }
+  

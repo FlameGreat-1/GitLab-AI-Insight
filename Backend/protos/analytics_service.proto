@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package analytics_service;
+
+service AnalyticsService {
+  rpc AnalyzeCollaboration (CollaborationRequest) returns (CollaborationResponse) {}
+  rpc AnalyzeTeamMorale (TeamMoraleRequest) returns (TeamMoraleResponse) {}
+  rpc PredictCodeQuality (CodeQualityRequest) returns (CodeQualityResponse) {}
+}
+
+message CollaborationRequest {}
+
+message CollaborationResponse {
+  int32 communities = 1;
+  repeated string key_developers = 2;
+}
+
+message TeamMoraleRequest {}
+
+message TeamMoraleResponse {
+  float average_sentiment = 1;
+}
+
+message CodeQualityRequest {
+  string file_content = 1;
+}
+
+message CodeQualityResponse {
+  float quality_score = 1;
+}

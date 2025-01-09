@@ -1,0 +1,49 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  image: python:3.9
+  script:
+    - pip install -r requirements.txt
+    - pytest tests/
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t gitlab-insight-ai .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    - docker stop gitlab-insight-ai || true
+    - docker rm gitlab-insight-ai || true
+    - docker run -d --name gitlab-insight-ai -p 8000:8000 $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+  only:
+    - main
+
+
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA myacr.azurecr.io/gitlab-insight-ai:latest
+    - docker push myacr.azurecr.io/gitlab-insight-ai:latest
+    - chmod +x deploy_to_aci.sh
+    - ./deploy_to_aci.sh
+  only:
+    - main

@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package data_service;
+
+service DataService {
+  rpc FetchIssues (FetchRequest) returns (IssuesResponse) {}
+  rpc FetchMergeRequests (FetchRequest) returns (MergeRequestsResponse) {}
+  rpc FetchCommits (FetchRequest) returns (CommitsResponse) {}
+}
+
+message FetchRequest {
+  int32 limit = 1;
+}
+
+message Issue {
+  int32 id = 1;
+  string title = 2;
+  string description = 3;
+  string state = 4;
+  string created_at = 5;
+  string updated_at = 6;
+}
+
+message IssuesResponse {
+  repeated Issue issues = 1;
+}
+
+message MergeRequest {
+  int32 id = 1;
+  string title = 2;
+  string description = 3;
+  string state = 4;
+  string created_at = 5;
+  string merged_at = 6;
+}
+
+message MergeRequestsResponse {
+  repeated MergeRequest merge_requests = 1;
+}
+
+message Commit {
+  string id = 1;
+  string message = 2;
+  string author_name = 3;
+  string committed_date = 4;
+}
+
+message CommitsResponse {
+  repeated Commit commits = 1;
+}

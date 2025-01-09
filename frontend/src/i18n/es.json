@@ -1,0 +1,101 @@
+{
+    "common": {
+      "appName": "GitLab Insight AI",
+      "loading": "Cargando...",
+      "error": "Se produjo un error",
+      "success": "Éxito",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "confirm": "Confirmar",
+      "back": "Atrás"
+    },
+    "auth": {
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión",
+      "register": "Registrarse",
+      "forgotPassword": "Olvidé mi contraseña",
+      "resetPassword": "Restablecer contraseña",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "newPassword": "Nueva contraseña",
+      "rememberMe": "Recordarme",
+      "loginSuccess": "Sesión iniciada con éxito",
+      "logoutSuccess": "Sesión cerrada con éxito",
+      "registrationSuccess": "Registro exitoso",
+      "passwordResetSuccess": "Contraseña restablecida con éxito"
+    },
+    "navigation": {
+      "dashboard": "Panel de control",
+      "projects": "Proyectos",
+      "models": "Modelos ML",
+      "datasets": "Conjuntos de datos",
+      "analytics": "Análisis",
+      "settings": "Configuración",
+      "profile": "Perfil"
+    },
+    "dashboard": {
+      "welcome": "Bienvenido, {{name}}",
+      "recentActivity": "Actividad reciente",
+      "quickStats": "Estadísticas rápidas",
+      "totalProjects": "Total de proyectos",
+      "activeModels": "Modelos activos",
+      "pendingTasks": "Tareas pendientes"
+    },
+    "projects": {
+      "createProject": "Crear proyecto",
+      "projectName": "Nombre del proyecto",
+      "description": "Descripción",
+      "createdAt": "Creado el",
+      "lastUpdated": "Última actualización",
+      "noProjects": "No se encontraron proyectos"
+    },
+    "models": {
+      "createModel": "Crear modelo",
+      "modelName": "Nombre del modelo",
+      "modelType": "Tipo de modelo",
+      "status": "Estado",
+      "accuracy": "Precisión",
+      "trainModel": "Entrenar modelo",
+      "deployModel": "Desplegar modelo",
+      "predictionsCount": "Conteo de predicciones"
+    },
+    "datasets": {
+      "uploadDataset": "Subir conjunto de datos",
+      "datasetName": "Nombre del conjunto de datos",
+      "rowCount": "Número de filas",
+      "columnCount": "Número de columnas",
+      "lastUsed": "Último uso",
+      "noDatasets": "No se encontraron conjuntos de datos"
+    },
+    "analytics": {
+      "performanceOverview": "Resumen de rendimiento",
+      "modelComparison": "Comparación de modelos",
+      "userActivity": "Actividad del usuario",
+      "dataDistribution": "Distribución de datos",
+      "timeRange": "Rango de tiempo",
+      "metric": "Métrica"
+    },
+    "settings": {
+      "accountSettings": "Configuración de la cuenta",
+      "notificationPreferences": "Preferencias de notificación",
+      "securitySettings": "Configuración de seguridad",
+      "apiKeys": "Claves API",
+      "darkMode": "Modo oscuro",
+      "language": "Idioma"
+    },
+    "errors": {
+      "required": "Este campo es obligatorio",
+      "invalidEmail": "Dirección de correo electrónico inválida",
+      "passwordMismatch": "Las contraseñas no coinciden",
+      "minLength": "Debe tener al menos {{count}} caracteres",
+      "maxLength": "Debe tener como máximo {{count}} caracteres",
+      "serverError": "Se produjo un error en el servidor. Por favor, inténtelo de nuevo más tarde.",
+      "notFound": "Recurso no encontrado",
+      "unauthorized": "Acceso no autorizado",
+      "forbidden": "Acceso prohibido"
+    }
+  }
+  

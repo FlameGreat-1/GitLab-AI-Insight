@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package model_service;
+
+service ModelService {
+  rpc PredictIssueState (IssuePredictionRequest) returns (IssuePredictionResponse) {}
+  rpc EstimateMRTime (MRTimeEstimationRequest) returns (MRTimeEstimationResponse) {}
+  rpc PredictCommitImpact (CommitImpactPredictionRequest) returns (CommitImpactPredictionResponse) {}
+}
+
+message IssuePredictionRequest {
+  string issue_data = 1;
+}
+
+message IssuePredictionResponse {
+  string predicted_state = 1;
+}
+
+message MRTimeEstimationRequest {
+  string mr_data = 1;
+}
+
+message MRTimeEstimationResponse {
+  float estimated_time = 1;
+}
+
+message CommitImpactPredictionRequest {
+  string commit_data = 1;
+}
+
+message CommitImpactPredictionResponse {
+  float predicted_impact = 1;
+}

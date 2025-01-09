@@ -1,0 +1,47 @@
+/* src/styles/components/Dashboard.module.css */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .widget {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: transform var(--transition-duration) ease;
+  }
+  
+  .widget:hover {
+    transform: translateY(-5px);
+  }
+  
+  .widgetTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .widgetContent {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .darkMode {
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  .darkMode .widget {
+    background-color: #3c3c3c;
+  }
+  

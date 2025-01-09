@@ -1,0 +1,84 @@
+/* src/styles/components/Visualization.module.css */
+
+.visualizationContainer {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .legendItem {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .legendColor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .select {
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .button {
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color var(--transition-duration) ease;
+  }
+  
+  .button:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
+  @media (max-width: 768px) {
+    .visualizationContainer {
+      height: 300px;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .select, .button {
+      margin-bottom: 10px;
+    }
+  }
+  
