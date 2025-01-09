@@ -84,4 +84,3 @@ services:
       - model_service
       - analytics_service
 
-  # Add other necessary services (e.g., database, Kafka, etc.)
